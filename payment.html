@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ClearPath — Payment</title><style>
+*{box-sizing:border-box}
+:root{--ink:#10233f;--muted:#64748b;--line:#dbe3ee;--bg:#f5f7fb;--accent:#175cd3}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:linear-gradient(135deg,#0d2342,#175cd3);color:#fff;padding:24px 18px}
+.wrap{max-width:900px;margin:auto}
+main{padding:24px 16px 50px}
+h1{margin:0 0 6px;font-size:28px} h2{margin:0 0 12px;font-size:20px}
+header p{margin:0;opacity:.9}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:18px;box-shadow:0 5px 18px rgba(16,35,63,.06)}
+.badge{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;background:#fff1cc;color:#785500;padding:5px 8px;border-radius:999px;margin-bottom:10px}
+.notice{font-size:13px;line-height:1.5;color:var(--muted)}
+label{font-weight:700;display:block;margin-bottom:8px}
+input[type=file]{width:100%;padding:14px;border:2px dashed #b8c7db;border-radius:12px;background:#fafcff}
+.preview{text-align:center;margin-top:14px}.preview img{max-width:100%;max-height:280px;border-radius:10px;border:1px solid var(--line)}
+.buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+button,.btn{border:0;border-radius:10px;padding:12px 16px;font-weight:700;font-size:15px;cursor:pointer;text-decoration:none;display:inline-block}
+.primary{background:var(--accent);color:#fff}.secondary{background:#e9eef7;color:var(--ink)}
+.record{border:1px solid var(--line);border-radius:12px;padding:15px;margin:10px 0;background:#fbfcfe}
+.record strong{display:block;font-size:16px}.amount{font-size:18px;font-weight:800;margin-top:5px}
+.total{display:flex;justify-content:space-between;padding:16px 0;border-top:2px solid var(--line);font-size:20px;font-weight:800}
+.pay{background:#0d2342;color:#fff;flex:1;min-width:180px;text-align:center}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 30px}
+</style></head>
+<body><header><div class="wrap"><h1>ClearPath</h1><p>Payment options</p></div></header>
+<main class="wrap"><section class="card">
+<span class="badge">PAYMENT PROCESSING</span><h2>Payment methods</h2>
+<p class="notice">These buttons open external payment provider websites. This test site does not process payments.</p>
+<div class="record"><strong>Total amount due</strong><div class="amount">$3,000.00</div></div>
+<div class="buttons">
+<a class="btn pay" href="https://cash.app/" target="_blank" rel="noopener noreferrer">Cash App</a>
+<a class="btn pay" href="https://buy.simplex.com/" target="_blank" rel="noopener noreferrer">Simplex</a>
+<a class="btn pay" href="https://www.moonpay.com/buy/eth" target="_blank" rel="noopener noreferrer">MoonPay ETH</a>
+</div>
+<div class="buttons"><a class="btn secondary" href="results.html">Back to Results</a><a class="btn secondary" href="clearpath_ocr.html">Start Over</a></div>
+<p class="notice" style="margin-top:20px"><strong>Notice:</strong> The records and amounts are fictional test data for demonstration only.</p>
+</section></main><footer>ClearPath payment interface</footer></body></html>
